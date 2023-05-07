@@ -1,4 +1,3 @@
 # PCAP-file-Parser
-This python code will provide a enhanced view of your captured network traffic
-It will summarize the PCAP file and display the statistics in different colours which was possible using appropriate python library
-Download the script on your local system and before running configure the path of the PCAP file you wish to evaluate.
+This Python Script will allow its user to filter packets of a pcap file using the provided filters in it.
+It is not similar to wireshark as in wireshark the packets captured are stored in a pcap file but here the packets will be stored in a mysql server the server credentials need to be changed and configured in the script by the user.
