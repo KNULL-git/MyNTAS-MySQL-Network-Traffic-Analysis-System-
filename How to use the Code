@@ -1,3 +1,4 @@
+#How to use the code
 Replace "mysql_host_name", "mysql_user_name", "mysql_password", "mysql_database", and "pcap_file.pcap" with your actual MySQL server, pcap file, and credentials. 
 Provided code will now extracts and stores various packet information for each protocol in the corresponding tables.
 Here are 10 points to help you successfully implement and use the provided code on a local machine
