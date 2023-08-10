@@ -1,4 +1,4 @@
-# PCAP-Filter
+# MyNTAS (MySQL Network Traffic Analyser)
 The Python script presented introduces a novel paradigm for packet analysis that deviates from the conventional method employed by tools like Wireshark. While Wireshark captures and archives packets in pcap files, this script takes a distinctive approach by allowing users to filter packets within a pcap file using custom-defined filters. Furthermore, it transcends the realm of local file storage by facilitating the storage of these filtered packets within a MySQL server, enhancing both the efficiency and organization of the packet analysis process.
 
 To harness the capabilities of this script effectively, users are required to configure and adapt server credentials within the script itself. By doing so, users can seamlessly establish a connection with a MySQL server of their choice. This level of configurability ensures that the script accommodates a wide range of database environments, making it versatile and adaptable for various use cases.
