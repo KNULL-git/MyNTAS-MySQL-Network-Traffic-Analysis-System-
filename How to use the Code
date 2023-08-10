@@ -1,0 +1,70 @@
+Replace "mysql_host_name", "mysql_user_name", "mysql_password", "mysql_database", and "pcap_file.pcap" with your actual MySQL server, pcap file, and credentials. 
+Provided code will now extracts and stores various packet information for each protocol in the corresponding tables.
+Here are 10 points to help you successfully implement and use the provided code on a local machine
+
+Setting Up MySQL Server:
+Ensure you have a MySQL server installed and running on your local machine. Modify the mysql_host, mysql_user, mysql_password, and mysql_database variables with your MySQL server credentials.
+
+Install Required Libraries:
+Make sure you have the mysql-connector-python and scapy libraries installed. If not, you can install them using pip install mysql-connector-python scapy.
+
+Create a New Database:
+Before running the script, create a new database with the name specified in the mysql_database variable.
+
+Capture PCAP File:
+Save the network packet capture (PCAP) file you want to analyze in the same directory as the script and replace "your_pcap_file.pcap" with the actual file name.
+
+Run the Script:
+Execute the script using a Python interpreter. It will create separate tables for various protocols and store packet information.
+
+Monitor Output:
+As the script runs, monitor the console output to ensure tables are being created and packet information is being processed.
+
+Check MySQL Server:
+After the script completes, check your MySQL server to confirm the tables are created and populated with packet data.
+
+Table Contents:
+The created tables will contain columns for source IP, destination IP, source port, destination port, protocol information, and a timestamp.
+
+Customize and Expand:
+Feel free to modify the code to add more protocols or extract additional information from packets as needed.
+
+Explore Data:
+Use SQL queries to explore and analyze the captured packet data directly in your MySQL database.
+
+Final Output---->
+
+------------------- Packet Analysis Script -------------------
+
+Connecting to MySQL server...
+Connected to MySQL server
+
+Creating tables for each protocol...
+Table tcp_packets created
+Table udp_packets created
+Table ipv4_packets created
+Table ipv6_packets created
+Table icmp_packets created
+Table arp_packets created
+Table dns_packets created
+Table dhcp_packets created
+
+Reading and processing pcap file...
+TCP Packet - Source: ... , Destination: ...
+UDP Packet - Source: ... , Destination: ...
+IPv4 Packet - Source: ... , Destination: ...
+...
+
+Storing packet information in tables...
+
+Analysis completed. Closing MySQL connection...
+
+------------------------ Analysis Summary ------------------------
+
+- Total packets analyzed: ...
+- TCP packets stored: ...
+- UDP packets stored: ...
+- IPv4 packets stored: ...
+...
+
+MySQL connection closed. Analysis finished.
